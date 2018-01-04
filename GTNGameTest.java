@@ -7,11 +7,18 @@ import java.util.*;
 
 public class GTNGameTest {
   @Test
-  public void testTrue() {
-	String tmp[] = new String [5];
+  public void testMaxValueSetter() {
+	String tmp[] = new String []{"5"};
     GTNGame testValue = new GTNGame(tmp);
-	System.out.println("testValue.getMaxNum(): " + testValue.getMaxNum());
+	//System.out.println("testValue.getMaxNum(): " + testValue.getMaxNum());
 	assertTrue(testValue.getMaxNum() == 5);
+  }
+  
+  @Test
+  public void testSetTheGuessedNumber() {
+	String tmp[] = new String []{"5"};
+    GTNGame testValue = new GTNGame(tmp);
+	assertTrue(testValue.getTheGuessedNumber() < 5);
   }
   
 /*  @Test

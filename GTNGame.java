@@ -7,7 +7,7 @@ public class GTNGame{
 	private int number;
 	private boolean failedToInit = true;
 	
-	private GTNGame (String tmp[]){
+	public GTNGame (String tmp[]){
 		try{
 			maxNum = Integer.parseInt(tmp[0]);
 			if(maxNum >0){
